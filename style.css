@@ -1,0 +1,128 @@
+
+*{
+	box-sizing: border-box;
+	margin:0px;
+	padding:0px;
+}
+
+#videoWrapper{
+	width:100%;
+	height:200px;
+	margin:0 auto 10px;
+	display: block;
+	
+}
+
+
+}
+
+#textWrapper{
+	width:80%;
+	margin:40px auto;
+}
+
+p {
+	margin: 20px auto;
+	line-height: 1.5;
+	width:90%;
+}
+
+.addColor{
+	color:  #F6D155; /*Primrose Yellow */
+}
+
+ h1{
+ 	text-align:center;
+ 	margin-top: 20px;
+ 	padding:10px;
+ 	background-color:teal;
+ 	color:white;
+ 	border-radius: 10px;
+ 	border:solid black 1px;
+ 	width: 80%;
+ 	margin: 20px auto;
+	}
+
+	h4{
+		text-align:center;
+	}
+
+	.halftime{
+		display:none;
+		background-image: url("halftime.jpg");
+		width: 50%;
+		height:200px;
+		margin: 0px auto;
+	}
+
+	form{
+		width:100%;
+
+		margin:20px auto;
+	}
+
+	input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 10px;
+    box-sizing: border-box;
+    border: solid black 1px;
+    border-radius: 5px;
+}
+
+	input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    width:100%;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+	.header{
+		
+		width:100%;
+		background-color:black;
+		height:100px;
+		color:white;
+		text-align: center;
+	}
+
+	#videoWrapper{
+	width:60%;
+	margin:20px auto;
+	height:450px;
+	text-align: center;
+	
+}
+p{
+	width:100%;
+}
+
+h1{
+	width:50%;
+	margin:10px auto;
+}
+
+	#textWrapper{
+		width:60%;
+		margin:20px auto;
+	}
+
+	.footer{
+		width:100%;
+		background-color:black;
+		height:50px;
+	}
+
+	
+
+   
+}
