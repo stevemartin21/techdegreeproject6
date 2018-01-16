@@ -1,0 +1,113 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+
+<!-- Add any other renderers you need; see Use Renderers for more information -->
+<link rel="stylesheet" href="mediaelementplayer.min.css" />
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+	<title></title>
+</head>
+<body>
+	<div class="header">
+ 		
+
+	</div>
+
+	<h1>Steve Martin TV</h1>
+
+	<h4>Learn How to Use the Internet</h4>
+
+
+	<div id="videoWrapper">
+
+	<video width="100%" height="100%" class="mejs__player" id="myVideo">
+	<source type="video/mp4" src="video/video.mp4" />
+	<source type="video/ogg" src="video/video.ogg" />
+	</video>
+
+	</div>
+
+	<h1>Time Tracker <span id="tracker"></span></h1>
+
+	<div id="textWrapper">
+
+	<p>
+		<span data-starttime ="00.240" data-endtime = "04.130">Now that we've looked at the architecture
+		of the internet, let's see how you might </span>
+		<span data-starttime ="04.130" data-endtime = "07.535">connect your personal devices to
+		the internet inside your house. </span>
+		<span data-starttime ="07.535" data-endtime = "11.270"> Well there are many ways to
+		connect to the internet, and </span> 
+		<span data-starttime ="11.270" data-endtime = "13.960">most often people connect wirelessly. </span>
+	</p>
+
+
+	<p>
+		<span data-starttime ="13.960" data-endtime = "17.940">Let's look at an example of how
+		you can connect to the internet. </span>
+		<span data-starttime ="17.940" data-endtime = "22.370"> If you live in a city or a town,
+		you probably have a coaxial cable for </span> 
+		<span data-starttime ="22.370" data-endtime = "26.880">cable Internet, or a phone line if you
+		have DSL, running to the outside of </span>
+		<span data-starttime ="26.880" data-endtime = "30.920"> your house, that connects you to
+		the Internet Service Provider, or ISP. </span>
+		<span data-starttime ="30.920" data-endtime = "34.730"> If you live far out in the country,
+		you'll more likely have </span>
+		<span data-starttime ="34.730" data-endtime = "39.430">a dish outside your house, connecting
+		you wirelessly to your closest ISP, or </span>
+		<span data-starttime ="39.430" data-endtime = "41.190">you might also use the telephone system.</span>
+	</p>
+
+	<p> 
+		<span data-starttime ="41.190" data-endtime = "46.300">Whether a wire comes straight from
+		the ISP hookup outside your house, or </span>
+		 <span data-starttime ="46.300" data-endtime = "49.270"> it travels over radio
+		waves from your roof, </span>
+		<span data-starttime ="49.270" data-endtime = "53.760"> the first stop a wire will make once
+		inside your house, is at your modem. </span>
+		<span data-starttime ="53.760" data-endtime = "57.780">A modem is what connects the internet
+		to your network at home. </span>
+		<span data-starttime ="57.780" data-endtime = "1:00.150">A few common residential modems are DSL or </span>
+	</p>
+	
+		<h1>Subscribe to our Newsletter</h1>
+
+	<form>
+	<input type="text" name="newsletter" placeholder="Enter Email Address..."> <input type="submit" value="Submit"> 
+	</form>
+
+
+
+	</div>
+
+
+	<div class="footer">
+
+	</div>
+
+
+
+<script src="jquery.js"></script>
+<script src="mediaelement-and-player.min.js"></script>
+<script src="script.js"></script>
+
+<script>
+// Get the video element with id="myVideo"
+let video = document.getElementById("myVideo");
+
+// Assign an ontimeupdate event to the video element, and execute a function if the current playback position has changed
+video.ontimeupdate = function() {myFunction()};
+
+function myFunction() {
+    // Display the current position of the video in a p element with id="demo"
+    document.getElementById("tracker").innerHTML = video.currentTime;
+}
+</script>
+
+</body>
+</html>
